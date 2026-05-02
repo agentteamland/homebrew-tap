@@ -5,21 +5,21 @@
 class Atl < Formula
   desc "AgentTeamLand package manager CLI — install teams, scaffold projects"
   homepage "https://github.com/agentteamland/cli"
-  version "1.1.3"
+  version "1.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agentteamland/cli/releases/download/v1.1.3/atl_1.1.3_darwin_amd64.tar.gz"
-      sha256 "b673114f7d0eaa9cde3a3ae2d0c4dd341afe15a344dd09bd66318c8a685e1b1e"
+      url "https://github.com/agentteamland/cli/releases/download/v1.1.4/atl_1.1.4_darwin_amd64.tar.gz"
+      sha256 "97044173c5796503e18f5e83ea6f42f59e368476554324b875d10fb501f1cfef"
 
       define_method(:install) do
         bin.install "atl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agentteamland/cli/releases/download/v1.1.3/atl_1.1.3_darwin_arm64.tar.gz"
-      sha256 "19e4abbde9870d1faccb604134ca3922c94c3ff8da13b1f6d6583091f074f8b9"
+      url "https://github.com/agentteamland/cli/releases/download/v1.1.4/atl_1.1.4_darwin_arm64.tar.gz"
+      sha256 "8ce87e782c3a2761755b495f1d03ff4ba584f6d8738550022d06bf0188cf0372"
 
       define_method(:install) do
         bin.install "atl"
@@ -29,15 +29,15 @@ class Atl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentteamland/cli/releases/download/v1.1.3/atl_1.1.3_linux_amd64.tar.gz"
-      sha256 "16f3e9a268dac9ea5953f6f70c6424a3817f34d018518f0954aefed7b774179f"
+      url "https://github.com/agentteamland/cli/releases/download/v1.1.4/atl_1.1.4_linux_amd64.tar.gz"
+      sha256 "0b715b6dd433754cbc95f8766b0c25241e540a2f44cccf2537af481081a8fa93"
       define_method(:install) do
         bin.install "atl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agentteamland/cli/releases/download/v1.1.3/atl_1.1.3_linux_arm64.tar.gz"
-      sha256 "d066b3c92fa315c3b8b17efea1c8622d101a02b510709bece679323b705f8bff"
+      url "https://github.com/agentteamland/cli/releases/download/v1.1.4/atl_1.1.4_linux_arm64.tar.gz"
+      sha256 "d722aa0fc074070026d78475a94abeebed337a77a3d07304ed173cb41df30e9c"
       define_method(:install) do
         bin.install "atl"
       end
