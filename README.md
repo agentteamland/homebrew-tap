@@ -1,33 +1,17 @@
-# AgentTeamLand Homebrew Tap
+# 🍺 AgentTeamLand Homebrew Tap
 
-Homebrew formulas for the AgentTeamLand ecosystem (macOS + Linux).
+> Auto-managed Homebrew Formula for the [`atl` CLI](https://github.com/agentteamland/cli) (macOS + Linuxbrew).
 
-## Install
+This tap holds a single Ruby Formula at `Formula/atl.rb`. Goreleaser overwrites it on every git tag in [`agentteamland/cli`](https://github.com/agentteamland/cli) — no manual edits land here. Branch protection is intentionally NOT applied (would block goreleaser's force-push).
 
-```bash
-brew install agentteamland/tap/atl
-```
+## 📚 Documentation
 
-Or equivalently:
+Full docs live at **[agentteamland.github.io/docs](https://agentteamland.github.io/docs/)**.
 
-```bash
-brew tap agentteamland/tap
-brew install atl
-```
+Most relevant sections:
 
-## Update
-
-```bash
-brew upgrade atl
-```
-
-## Available formulas
-
-| Name | Description |
-|---|---|
-| `atl` | AgentTeamLand package manager CLI |
-
-Formulas are updated automatically by [goreleaser](https://goreleaser.com/) when a new version is tagged in [agentteamland/cli](https://github.com/agentteamland/cli).
+- [Install `atl` (Homebrew section)](https://agentteamland.github.io/docs/guide/install#macos-linux-homebrew-recommended) — the user-facing install commands
+- [Release pipeline](https://agentteamland.github.io/docs/contributing/release-pipeline) — how this tap gets auto-bumped on every cli tag (the maintainer-facing detail)
 
 ## License
 
